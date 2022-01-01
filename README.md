@@ -1,1 +1,1 @@
-Am încărcat şi o arhiva ce conţine întregul proiect pentru a evita eventualele probleme .
+Am încărcat şi o arhivă ce conţine întregul proiect pentru a evita eventualele probleme .
