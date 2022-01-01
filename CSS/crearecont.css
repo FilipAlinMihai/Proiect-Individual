@@ -1,0 +1,33 @@
+body 
+{
+	background-image: url("../imagini/background5.jpg");
+	background-size: 1700px 1000px;
+	background-color: #DCDCDC;
+	color:white;
+	font-size:130%;
+}
+h1
+{
+    text-shadow: 1px 1px;
+}
+.center 
+{
+    margin: auto;
+    width: 50%;
+    padding: 15px;
+    border:5px solid #796dce;
+	text-align:center;
+  
+}
+.formular
+{
+	border:5px solid #00BFFF
+}
+.button
+{
+	font-size:130%;
+	border-radius: 12px;
+	background-color: #00BFFF;
+	color: white;
+	width: 150px;
+}
