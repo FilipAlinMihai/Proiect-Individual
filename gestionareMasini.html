@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+ <link rel="stylesheet" href="./CSS/GestionareMasini.css">
+<title>Gestionare</title>
+</head>
+<body>
+<div class="center">
+<h1>Gestionarea Maşinilor</h1>
+<h3>Închirieri Auto</h3>
+
+
+<p style='font-size:130%'>Pentru adăugarea unei maşini noi completaţi formularul următor</p>
+<form action="PHP/gestionaremasini.php" method="post" class="formular" enctype="multipart/form-data">
+<table>
+<tr> <td>Numele maşinii</td>  <td><input type="text" name="numemasina" value=""/></td></tr>
+<tr> <td>Producător</td>  <td><input type="text" name="producator" value=""/></td></tr>
+<tr> <td>Tipul</td>  <td><input type="text" name="tip" value=""/></td></tr>
+<tr> <td>Preţul</td>  <td><input type="number" name="pret" value=""/></td></tr>
+<tr> <td>Număr de maşini</td>  <td><input type="number" name="nr" value=""/></td></tr>
+<tr> <td>Imagine</td>  <td><input type="file" name="imagine"></td></tr>
+<tr> <td><input type="submit" value="adauga" class="button"></td>  </tr>
+</table>
+</form>
+
+<p style='font-size:130%'>Pentru ştergerea unei maşini completaţi formularul următor</p>
+<form action="PHP/stergeremasini.php" method="post" class="formular">
+<table>
+<tr> <td>Numele maşinii</td>  <td><input type="text" name="numem" value=""/></td></tr>
+<tr> <td>Producător</td>  <td><input type="text" name="produc" value=""/></td></tr>
+<tr> <td><input type="submit" value="stergere" class="button"></td>  </tr>
+</table>
+</form>
+<br>
+<p style='font-size:130%'>Pentru ştergerea unei închirieri completaţi formularul următor</p>
+<form action="PHP/stergereInchiriere.php" method="post" class="formular">
+<table>
+<tr> <td>Codul închirierii</td>  <td><input type="number" name="cod" value=""/></td></tr>
+<tr> <td>Numele clientului</td>  <td><input type="text" name="numemClient" value=""/></td></tr>
+<tr> <td>Numele maşinii</td>  <td><input type="text" name="numemM" value=""/></td></tr>
+<tr> <td>Producător</td>  <td><input type="text" name="producatorM" value=""/></td></tr>
+<tr> <td><input type="submit" value="stergere" class="button"></td>  </tr>
+</table>
+</form>
+<br>
+
+<a href="PHP/afisareA.php"><button class="button">Maşini</button></a>
+<a href="PHP/afisareInchirieri.php"><button class="button">Închirieri</button></a>
+<a href="PHP/InchirieriInAsteptare.php"><button class="button">Închirieri în aşteptare</button></a></br>
+<a href="PHP/afisareClienti.php"><button class="button">Utilizatori</button></a>
+<a href="login.html"><button class="button">Ieşire</button></a>
+
+<form action="PHP/CautaMasinaA.php" method="post">
+<table>
+<tr>
+ <td><p style="font-size:23px">Caută o maşină<p></td>
+ <td><input type="text" name="masina" value=""/></td>
+ <td><input type="submit" value="Căutare" class="button"></td>
+</tr>
+</table>
+</form>
+</div>
+</body>

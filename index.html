@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+ <link rel="stylesheet" href="./CSS/index.css">
+<title>Închirieri auto</title>
+</head>
+<body>
+
+<script>
+var i=0;
+var imagini=[];
+var timp=5000;
+imagini[0]="imagini/GiuliaAlfa Romeo.jpg";
+imagini[1]="imagini/StelvioAlfa Romeo.jpg";
+imagini[2]="imagini/LoganDacia.jpg";
+imagini[3]="imagini/XC60Volvo.jpg";
+imagini[4]="imagini/MeganeRenault.jpg";
+imagini[5]="imagini/FiestaFord.jpg";
+imagini[6]="imagini/CorollaToyota.jpg";
+imagini[7]="imagini/ClioRenault.jpg";
+
+function fun(){
+document.imgs.src=imagini[i];
+if(i<imagini.length-1){
+i++;
+}
+else
+{
+i=0;
+}
+setTimeout("fun()",timp);
+}
+window.onload=fun;
+</script>
+
+
+
+<div class="rotund">
+<div class="Titlu" id="tit">
+<h1>Maşina Perfectă</h1>
+<p id="subtitlu">La momentul potrivit</p>
+</div>
+<div id="cont">
+	<p>Închiriază simplu şi rapid</p>
+</div>
+<div class="butoane">
+<a href='crearecont.html'><button  class="button">Creează Cont</button></a><br>
+<a href='login.html'><button class="button">Autentificare</button></a>
+</div>
+</div>
+</br>
+<div class="Fereastra">
+<img src="imagini/GiuliaAlfaRomeo.jpg" name="imgs" width="750" height="440"><br>
+<p>Maşini din oferta noastră</p>
+</div>
+</br>
+
+<div class="rotund" id="date">
+<h2>Detalii de închiriere</h2>
+<p>Ridicarea maşinii se face la sediu</p>
+<p>Cererea va fi aprobată sau respinsă în cel mai scurt timp posibil</p>
+<p>Plata se efectuează înaintea ridicării</p>
+</div>
+</br>
+
+<div class="rotund" id="date1">
+<h2>Date de contact</h2>
+<h3>Contactează-ne prin : </h3>
+<p>E-mail: masina.perfecta@gmail.com</p>
+<p>Număr de telefon: 0734457383</p>
+<p>Adresa: Arad Strada Unirii Nr 27</p>
+</div>
+
+</body>
